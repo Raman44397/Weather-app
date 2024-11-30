@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}  
+
+#bodi{
+    background : #3d3c3c;
+    overflow: hidden;
+}
+
+#cd{
+   border-radius: 15px;
+   border: 2px solid rgb(236, 231, 231);
+}
+.card{ 
+    width: 100%;
+    max-width: 470px;
+    margin: 100px auto 0px;
+    /* border-radius: 20px; */
+    padding: 40px 30px;
+    text-align: center;
+    background-image: linear-gradient(300deg,#C9E6F0 0%,#78B3CE 74%);
+        background-size: 180% 180%;
+        animation: gradient-animation 8s ease infinite;
+}
+@keyframes gradient-animation{
+    0%{
+       background-position: 0% 50%;
+    }
+    50%{
+       background-position: 100% 50%;
+    }
+    100%{
+       background-position: 0% 50%;
+    }
+ }
+
+ .card .card-title{
+    font-size: 24px;
+    color: #fbfdfd;
+    margin-bottom: 30px;
+    }
+ .search-box{
+    width: 344px;
+    border: 1px solid #eeecec;
+    background-color: #eeecec;
+    margin-left: 30px;
+    border-radius: 20px;
+ }
+
+ #search{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: none;
+    /* left: 30px; */
+    /* position: absolute; */
+    outline: none;
+
+ }
+
+ #search-btn{
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    background-color: transparent;
+ }
+
+ .error{
+   margin-top: 30px;
+   font-weight: 600;
+   display: none;
+ }
+
+ .weather{
+   display: none;
+ }
+
+ .weather img{
+   width: 70px;
+   margin: 40px 0 20px 0;
+ }
+
+.weather h1{
+   font-size: 20px;
+}
+.weather h2{
+   font-size: 28px;
+   /* margin-top: -10px; */
+}
+
+.details{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.col{
+   display: flex;
+   align-items: center;
+   justify-content: left;
+   margin-top: 60px;
+   padding-left: 30px;
+}
+
+.col img{
+   width: 50px;
+   margin-top: 0px;
+}
+
+.detail-box :first-child{
+   font-weight: 600;
+   margin-left: 5px;
+}
+
+.detail-box :last-child{
+   margin-top: -15px;
+}
